@@ -1,7 +1,7 @@
-import { Options, DefaultTheme, DefaultThemeRenderContext } from "typedoc";
+import { Options, DefaultTheme, DefaultThemeRenderContext, JSX } from "typedoc";
 
 class TestThemeContext extends DefaultThemeRenderContext {
-  _header: any;
+  _header: DefaultThemeRenderContext["header"];
 
   constructor(theme: DefaultTheme, options: Options) {
     super(theme, options);
@@ -10,11 +10,7 @@ class TestThemeContext extends DefaultThemeRenderContext {
     this.header = (props) => {
       const res = this._header(props);
 
-      res.children.push({
-        tag: "div",
-        props: { class: "patched-header-test" },
-        children: [],
-      });
+      res.children.push(<div class="patched-header-test"></div>);
 
       console.log(res.children);
       return res;

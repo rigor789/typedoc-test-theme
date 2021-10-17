@@ -11,7 +11,10 @@
     "removeComments": true,
     "sourceMap": false,
     "strictNullChecks": true,
-    "target": "es2018"
+    "target": "es2018",
+    "jsx": "react",
+    "jsxFactory": "JSX.createElement",
+    "jsxFragmentFactory": "JSX.Fragment"
   },
   "include": ["./src"]
 }
