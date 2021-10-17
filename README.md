@@ -17,7 +17,7 @@ The deault theme to be used, and a custom tag added to the header.
 
 Actual:
 
-```log
+```
 TypeDoc exiting with unexpected error:
 AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
 
