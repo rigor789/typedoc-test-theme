@@ -1,0 +1,14 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "typedoc --theme test index.ts"
+  },
+  "dependencies": {
+    "typedoc": "^0.22.5",
+    "typedoc-test-theme": "../",
+    "typescript": "^4.4.4"
+  }
+}
